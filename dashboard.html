@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h1>Job Portal</h1>
+
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+
+</header>
+
+<div class="container">
+
+    <h2>Available Jobs</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by Job Title..."
+        onkeyup="searchJobs()">
+
+    <div id="jobList" class="job-list">
+
+    </div>
+
+</div>
+
+<!-- Saved Jobs -->
+
+<div class="container">
+
+    <h2>Saved Jobs</h2>
+
+    <div id="savedJobs" class="job-list">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

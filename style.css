@@ -1,0 +1,193 @@
+/* ==========================
+   Job Portal
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ---------- Login ---------- */
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:400px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.login-box h1{
+    text-align:center;
+    color:#007BFF;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.login-box label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    background:#007BFF;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box button:hover{
+    background:#0056b3;
+}
+
+.demo{
+    margin-top:20px;
+    background:#f8f8f8;
+    padding:10px;
+    border-radius:5px;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    background:#007BFF;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logout-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    background:darkred;
+}
+
+/* ---------- Main ---------- */
+
+.container{
+    width:90%;
+    margin:25px auto;
+}
+
+.container h2{
+    margin-bottom:15px;
+}
+
+#search{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* ---------- Job Cards ---------- */
+
+.job-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.job-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.job-card h3{
+    color:#007BFF;
+    margin-bottom:10px;
+}
+
+.job-card p{
+    margin:8px 0;
+}
+
+.job-card button{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+}
+
+.apply-btn{
+    background:#28a745;
+}
+
+.apply-btn:hover{
+    background:#1d7d34;
+}
+
+.save-btn{
+    background:#ff9800;
+}
+
+.save-btn:hover{
+    background:#e68900;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+.login-box{
+    width:95%;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.container{
+    width:95%;
+}
+
+}
